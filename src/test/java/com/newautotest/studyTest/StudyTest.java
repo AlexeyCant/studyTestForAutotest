@@ -38,7 +38,6 @@ public class StudyTest {
         // tasks should be "a", "b", "c"
         elements("#todo-list/li").shouldHave(exactTexts("a", "b", "c"));
         // toggle b
-        @TODO DJKBJSDBFJHVSDKJ
         // completed tasks should be b
         // active tasks should be a, c
 
