@@ -36,12 +36,11 @@ public class StudyTest {
         element("#new-todo").setValue("b").pressEnter();
         element("#new-todo").setValue("c").pressEnter();
         // tasks should be "a", "b", "c"
-        elements("#todo-list > li").shouldHave(exactTexts("a", "b", "c"));
+        elements("#todo-list li").shouldHave(exactTexts("a", "b", "c"));
         // toggle b
         // completed tasks should be b
         // active tasks should be a, c
 
     }
-
 
 }
