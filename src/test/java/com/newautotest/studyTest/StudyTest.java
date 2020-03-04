@@ -38,6 +38,7 @@ public class StudyTest {
         // tasks should be "a", "b", "c"
         elements("#todo-list li").shouldHave(exactTexts("a", "b", "c"));
         // toggle b
+        element("#todo-list li:nth-of-type(2) .toggle").click();
         // completed tasks should be b
         // active tasks should be a, c
 
